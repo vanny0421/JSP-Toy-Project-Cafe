@@ -9,12 +9,12 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
-  <servlet>
-     <servlet-name>CafeFrontController</servlet-name>
-     <servlet-class>com.toy.app.cafe.CafeFrontController</servlet-class>
+  <servlet> 
+     <servlet-name>CafeFrontController</servlet-name> 						<!-- servlet name ( 컨트롤러 ) -->
+     <servlet-class>com.toy.app.cafe.CafeFrontController</servlet-class>	<!-- package.class name ( 요청을 받을 서블릿 클래스 ) -->
   </servlet>
-  <servlet-mapping>
-    <servlet-name>CafeFrontController</servlet-name>
-    <url-pattern>*.ca</url-pattern>
-  </servlet-mapping>
+  <servlet-mapping> 
+    <servlet-name>CafeFrontController</servlet-name>	<!-- <servlet>랑 한세트 서블릿 이름 ( Controller )을 매핑 -->
+    <url-pattern>*.ca</url-pattern>						<!-- 요청받은 URL 주소가 .ca 으로 끝나면 CafeFrontController로 가라 -->
+  </servlet-mapping>								
 </web-app>

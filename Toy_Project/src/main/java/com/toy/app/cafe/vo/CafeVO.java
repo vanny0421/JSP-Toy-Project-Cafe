@@ -1,23 +1,22 @@
 package com.toy.app.cafe.vo;
 
 public class CafeVO {
-	int product_no;
+	int pno_seq;
 	String product_category;
 	String product_name;
 	int product_cnt;
 	int product_price;
 	String product_info;
 	String product_img;
-	String product_date;
 	
 	public CafeVO() {;}
 
-	public int getProduct_no() {
-		return product_no;
+	public int getPno_seq() {
+		return pno_seq;
 	}
 
-	public void setProduct_no(int product_no) {
-		this.product_no = product_no;
+	public void setPno_seq(int pno_seq) {
+		this.pno_seq = pno_seq;
 	}
 
 	public String getProduct_category() {
@@ -66,13 +65,5 @@ public class CafeVO {
 
 	public void setProduct_img(String product_img) {
 		this.product_img = product_img;
-	}
-
-	public String getProduct_date() {
-		return product_date;
-	}
-
-	public void setProduct_date(String product_date) {
-		this.product_date = product_date;
 	}
 }
